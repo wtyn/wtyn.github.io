@@ -612,11 +612,11 @@ tree -L 2 > /home/www/tree.txt # 当前目录结果存到 tree.txt 文件中</co
 -T string     # Replace the default HTML title and H1 header with string.
 --nolinks     # Turn off hyperlinks in HTML output.</code></pre><h3 id="杂项选项"><a href="#杂项选项" class="headerlink" title="杂项选项"></a>杂项选项</h3><pre><code>--version     # 输入版本信息。
 --help        # 打印使用帮助信息。
---            # Options processing terminator.</code></pre><h1 id="卸载火狐浏览器的命令"><a href="#卸载火狐浏览器的命令" class="headerlink" title="卸载火狐浏览器的命令"></a>卸载火狐浏览器的命令</h1><pre class=" language-shell"><code class="language-shell">(base) wwu@GAN:~$ dpkg --get-selections | grep firefox</code></pre>
-<pre><code>比如显示：
-firefox                        install
-firefox-locale-en                install
-firefox-locale-zh-hans                install</code></pre><pre class=" language-shell"><code class="language-shell">(base) wwu@GAN:~$ sudo apt-get purge firefox firefox-locale-en firefox-locale-zh-hans</code></pre>
+--            # Options processing terminator.</code></pre><h1 id="卸载火狐浏览器的命令"><a href="#卸载火狐浏览器的命令" class="headerlink" title="卸载火狐浏览器的命令"></a>卸载火狐浏览器的命令</h1><pre class=" language-shell"><code class="language-shell">dpkg --get-selections | grep firefox</code></pre>
+<blockquote>
+<p>比如显示：<br>firefox                        install<br>firefox-locale-en                install<br>firefox-locale-zh-hans                install</p>
+</blockquote>
+<pre class=" language-shell"><code class="language-shell">sudo apt-get purge firefox firefox-locale-en firefox-locale-zh-hans</code></pre>
 <h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><h2 id="查询容器Id"><a href="#查询容器Id" class="headerlink" title="查询容器Id"></a>查询容器Id</h2><pre class=" language-shell"><code class="language-shell">sudo docker ps -a</code></pre>
 <h2 id="启动某个镜像"><a href="#启动某个镜像" class="headerlink" title="启动某个镜像"></a>启动某个镜像</h2><pre class=" language-shell"><code class="language-shell">docker run -p 8000:8000 rasa/duckling</code></pre>
 <h2 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h2><pre class=" language-shell"><code class="language-shell">sudo docker start "容器ID"</code></pre>
